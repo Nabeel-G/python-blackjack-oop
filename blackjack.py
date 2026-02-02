@@ -155,7 +155,7 @@ def dealer_wins(player,dealer,chips):
 def push(player,dealer):
     print("Dealer and Player tie! It's a push.")
 
- player_chips = Chips() 
+player_chips = Chips() 
 
 while True:
     print('Welcome to BlackJack! Get as close to 21 as you can without going over!\n\
@@ -186,7 +186,7 @@ while True:
             player_busts(player_hand,dealer_hand,player_chips)
             break     
 
-          if player_hand.value <= 21:
+        if player_hand.value <= 21:
         
             while dealer_hand.value < 17:
                 hit(deck, dealer_hand)    
@@ -215,6 +215,3 @@ while True:
     else:
         print("Thanks for playing!")
         break
-        
-    
-    
